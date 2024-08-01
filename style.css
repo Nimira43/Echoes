@@ -28,10 +28,10 @@ html {
   --xl: 15px;
   --bx: 5px 10px 15px rgba(0, 0, 0, 0.5);
   --tr: 0.5s;
-  --f4: 400;
-  --f5: 500;
-  --f6: 600;
-  --f7: 700;
+  --w4: 400;
+  --w5: 500;
+  --w6: 600;
+  --w7: 700;
 }
 
 .container {
@@ -40,4 +40,14 @@ html {
   place-items: center;
   background: url('images/bg.png') top no-repeat;
   background-size: cover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  border: 1px solid var(--or);
+  border-radius: var(--sm);
+  padding: 10rem 5rem 8rem 5rem;
+
 }
