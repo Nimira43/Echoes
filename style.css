@@ -21,17 +21,6 @@ html {
   --gd: #333;
   --wh: #fefefe;
   --sk: #2babde;
-  --xs: 3px;
-  --sm: 5px;
-  --md: 7px;
-  --lg: 10px;
-  --xl: 15px;
-  --bx: 5px 10px 15px rgba(0, 0, 0, 0.5);
-  --tr: 0.5s;
-  --w4: 400;
-  --w5: 500;
-  --w6: 600;
-  --w7: 700;
 }
 
 .container {
@@ -45,9 +34,18 @@ html {
 .form {
   display: flex;
   flex-direction: column;
+  background-color: var(--pr);
   row-gap: 2rem;
-  border: 1px solid var(--or);
-  border-radius: var(--sm);
+  border: 0.1rem solid var(--or);
+  border-radius: 0.5rem;
   padding: 10rem 5rem 8rem 5rem;
+  position: relative;
+}
 
+.form-heading {
+  position: absolute;
+  top: 0;
+  font-size: 3rem;
+  color: var(--or);
+  font-weight: 200;
 }
