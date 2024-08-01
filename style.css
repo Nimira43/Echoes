@@ -3,10 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  text-decoration: none;
-  list-style: none;
+  
   font-family: 'League Spartan', sans-serif;
   font-weight: 300;  
 }
@@ -35,4 +32,12 @@ html {
   --f5: 500;
   --f6: 600;
   --f7: 700;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url('images/nbg.png') top no-repeat;
+  background-size: cover;
 }
