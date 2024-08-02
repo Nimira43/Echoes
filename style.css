@@ -14,14 +14,11 @@ html {
 }
 
 :root {
-  --pr: #111;
-  --se: #eee;
+  --dk: #111;
+  --lg: #eee;
   --or: #ff4500;
-  --gl: #ccc;
-  --gm: #888;
-  --gd: #333;
-  --wh: #fefefe;
-  --sk: #2babde;
+  --go: #e1bf03;
+  --gr: #888;
 }
 
 .container {
@@ -43,6 +40,14 @@ html {
   position: relative;
 }
 
+.letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
 .form-heading {
   position: absolute;
   top: 0;
@@ -62,13 +67,13 @@ html {
   border: 0.1rem solid var(--or);
   outline: none;
   font-size: 1.6rem; 
-  color: var(--se);
+  color: var(--lg);
   border-radius: 0.5rem;
   letter-spacing: 0.1rem;
 }
 
 .form-input::placeholder {
-  color: var(--gl)
+  color: var(--gr)
 }
 
 .form-group {
@@ -80,7 +85,9 @@ html {
   top: 50%;
   right: 3rem;
   transform: translateY(-50%);
-  color: var(--gl);
+  color: var(--lg);
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .form-btn {
@@ -88,7 +95,7 @@ html {
   border: 0.1rem solid transparent;
   border-radius: 0.5rem;
   background-color: var(--or);
-  color: var(--pr);
+  color: var(--dk);
   font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
