@@ -36,7 +36,7 @@ html {
   flex-direction: column;
   background-color: rgba(17, 17, 17, 0.98);
   row-gap: 2rem;
-  border: 0.1rem solid var(--sk);
+  border: 0.1rem solid var(--or);
   border-radius: 0.5rem;
   padding: 10rem 5rem 8rem 5rem;
   position: relative;
@@ -56,14 +56,33 @@ html {
   height: 2rem;
   padding: 1rem;
   background-color: transparent;
-  border: 0.1rem solid var(--sk);
+  border: 0.1rem solid var(--or);
   outline: none;
   font-size: 1.6rem; 
-  color: var(--or);
+  color: var(--se);
   border-radius: 0.5rem;
   letter-spacing: 0.1rem;
 }
 
 .form-input::placeholder {
   color: var(--gl)
+}
+
+.form-btn {
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+  background-color: var(--or);
+  color: var(--pr);
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in
+}
+
+.form-btn:hover {
+  border: 1px solid var(--or);
+  background-color: transparent;
+  color: var(--or);
 }
