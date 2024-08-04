@@ -89,8 +89,8 @@ html {
   color: var(--or);
   font-weight: 200;
   padding: 0.5rem 1rem;
-  /* padding: 5.5rem 1rem;
-  margin: 0 25%; */
+  padding: 3.5rem 1rem;
+  margin: 0 25%;
   transition: opacity 0.2s;
 }
 
@@ -141,6 +141,17 @@ html {
 .form-btn:hover {
   border: 1px solid var(--or);
   background-color: transparent;
-
   color: var(--or);
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 45%;
+  }
 }
