@@ -25,6 +25,13 @@ inputs.forEach((input) => {
       formHeading.style.opacity = 1
     }, 200)
   })
+  input.addEventListener('blur', () => {
+    formHeading.style.opacity = 0
+    setTimeout(() => {
+      formHeading.textContent = 'Register'
+      formHeading.style.opacity = 1
+    }, 200)
+  })
 })
 
 locks.forEach((lock) => {
