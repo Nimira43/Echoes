@@ -49,7 +49,8 @@ html {
   font-size: 50rem;
   font-weight: 900;
   text-transform: uppercase;
-  color: var(--go);
+  color: var(--or);
+  color: orangered;
   filter: blur(2rem);
   z-index: -1;
 }
