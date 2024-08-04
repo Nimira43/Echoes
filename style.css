@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* outline: none;   */
   font-family: 'League Spartan', sans-serif;
   font-weight: 300;  
   user-select: none;;
@@ -88,7 +87,6 @@ html {
   font-size: 3rem;
   color: var(--or);
   font-weight: 200;
-  padding: 0.5rem 1rem;
   padding: 3.5rem 1rem;
   margin: 0 25%;
   transition: opacity 0.2s;
