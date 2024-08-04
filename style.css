@@ -25,7 +25,7 @@ html {
   height: 100vh;
   display: grid;
   place-items: center;
-  background: url('images/bg.png') top no-repeat;
+  background: url('images/bgp.jpg') top no-repeat;
   background-size: cover;
 }
 
