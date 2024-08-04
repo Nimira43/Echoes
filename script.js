@@ -1,6 +1,7 @@
 const inputs = document.querySelectorAll('.form-input')
 const letter = document.querySelector('.letter')
 const locks = document.querySelectorAll('.form-group i')
+const formHeading = document.querySelector('.form-heading')
 
 inputs.forEach((input) => {
   input.addEventListener('input', (e) => {
@@ -16,6 +17,13 @@ inputs.forEach((input) => {
         letter.style.opacity = 1
       }, 100)
     }
+  })
+  input.addEventListener('focus', (e) => {
+    formHeading.style.opacity = 0
+    setTimeout(() => {
+      formHeading.textContent = e.target.placeholder
+      formHeading.style.opacity = 1
+    }, 200)
   })
 })
 
