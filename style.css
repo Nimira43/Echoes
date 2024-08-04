@@ -38,6 +38,7 @@ html {
   border-radius: 0.5rem;
   padding: 10rem 5rem 8rem 5rem;
   position: relative;
+  isolation: isolate;
 }
 
 .letter {
@@ -50,7 +51,7 @@ html {
   text-transform: uppercase;
   color: var(--go);
   filter: blur(2rem);
-   
+  z-index: -1;
 }
 
 .form-heading {
@@ -111,6 +112,6 @@ html {
 .form-btn:hover {
   border: 1px solid var(--or);
   background-color: transparent;
-  
+
   color: var(--or);
 }
