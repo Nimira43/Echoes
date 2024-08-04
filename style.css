@@ -111,5 +111,6 @@ html {
 .form-btn:hover {
   border: 1px solid var(--or);
   background-color: transparent;
+  
   color: var(--or);
 }
