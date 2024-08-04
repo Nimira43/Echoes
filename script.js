@@ -9,6 +9,11 @@ inputs.forEach((input) => {
         letter.textContent = e.target.value.split('').slice(-1)
         letter.style.opacity = 1
       }, 100)
+    } else {
+      setTimeout(() => {
+        letter.textContent = '*'
+        letter.style.opacity = 1
+      }, 100)
     }
   })
 })
