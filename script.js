@@ -1,5 +1,6 @@
 const inputs = document.querySelectorAll('.form-input')
 const letter = document.querySelector('.letter')
+const locks = document.querySelectorAll('.form-group i')
 
 inputs.forEach((input) => {
   input.addEventListener('input', (e) => {
@@ -15,5 +16,12 @@ inputs.forEach((input) => {
         letter.style.opacity = 1
       }, 100)
     }
+  })
+})
+
+locks.forEach((lock) => {
+  lock.addEventListener('click', () => {
+    lock.classList.toggle('fa-lock-open')
+    lock.classList.contains('fa-lock-open') ? (lock.previousElementSibling.type = 'text') : (lock.previousElementSibling.type = 'password')
   })
 })
